@@ -14,5 +14,5 @@ jobs:
         run: python scripts/build_analysis.py
       - name: Run regression tests
         run: python -m unittest discover -s scripts -p 'test_*.py'
-      - name: Check committed analytical output
-        run: git diff --exit-code -- analysis data/clean data/rejected checks/source_manifest.json checks/validation_results.json
+      - name: Check analytical content across Windows and Linux line endings
+        run: git diff --ignore-cr-at-eol --exit-code -- analysis data/clean data/rejected checks/source_manifest.json checks/validation_results.json
