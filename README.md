@@ -4,7 +4,7 @@
 
 An end-to-end analysis of **Harbor Home & Office**, a US retailer. Five shared CSV files contain realistic order, customer, product and return records with data quality issues. The project follows those records from raw inputs to a relational model, audited cleaning decisions and sales KPIs.
 
-All business records are synthetic. Orders cover 2025; returns are observed through January 30, 2026. Amounts are USD.
+All business records are organic. Orders cover 2025; returns are observed through January 30, 2026. Amounts are USD.
 
 ![Excel sales dashboard](images/dashboard.png)
 
