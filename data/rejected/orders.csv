@@ -1,0 +1,2 @@
+order_id,customer_id,order_date,channel,status,source_row,rejection_reason
+OX0001,C0188,2025-02-30,Store,Completed,1814,order_date: day is out of range for month

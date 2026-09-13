@@ -1,0 +1,6 @@
+order_line_id,order_id,product_id,quantity,unit_price,discount_rate,source_row,rejection_reason
+X000001,O00001,P010,-2,211.00,0.20,4473,quantity: quantity must be a positive integer
+X000002,O00002,P999,1,231.00,0.10,4474,product_id: unknown or rejected product
+X000003,O00003,P024,3,81.00,1.50,4475,"discount_rate: outside [0,1]"
+X000004,O00003,P012,3,unknown,0.05,4476,unit_price: invalid US-locale decimal
+X000005,O99999,P009,2,93.00,0.05,4477,order_id: unknown or rejected order

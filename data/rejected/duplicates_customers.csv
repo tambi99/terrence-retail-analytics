@@ -1,0 +1,5 @@
+customer_id,customer_name,region,segment,email,source_row,rejection_reason
+C0001,Customer 0001, east ,Business,,302,duplicate business record (source row excluded)
+C0002,Customer 0002,West,Consumer,customer2@example.com,303,duplicate business record (source row excluded)
+C0003,Customer 0003,North,Business,customer3@example.com,304,duplicate business record (source row excluded)
+C0004,Customer 0004,North,Consumer,customer4@example.com,305,duplicate business record (source row excluded)

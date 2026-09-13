@@ -1,0 +1,3 @@
+product_id,product_name,category,list_price,source_row,rejection_reason
+P001,Lamp 001,Lighting,122.00,26,duplicate business record (source row excluded)
+P002,Chair 002,Furniture,284.00,27,duplicate business record (source row excluded)

@@ -1,0 +1,2 @@
+return_id,order_line_id,return_date,return_quantity,reason,source_row,rejection_reason
+RX001,L000024,2025-10-21,999,Not needed,340,return_id: invalid text identifier; return_quantity: event exceeds purchased quantity

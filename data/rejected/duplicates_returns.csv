@@ -1,0 +1,4 @@
+return_id,order_line_id,return_date,return_quantity,reason,source_row,rejection_reason
+R00001,L000024,2025-10-21,1,Not needed,337,duplicate business record (source row excluded)
+R00002,L000026,2025-11-18,1,Wrong item,338,duplicate business record (source row excluded)
+R00003,L000032,2025-08-08,4,Damaged,339,duplicate business record (source row excluded)

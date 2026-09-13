@@ -1,0 +1,13 @@
+order_id,customer_id,order_date,channel,status,source_row,rejection_reason
+O00001,C0188,03/25/2025, retail , COMPLETED ,1802,duplicate business record (source row excluded)
+O00002,C0231,2025-08-29,Store,Completed,1803,duplicate business record (source row excluded)
+O00003,C0023,2025-08-08,Store,Completed,1804,duplicate business record (source row excluded)
+O00004,C0237,2025-11-13,Store,Completed,1805,duplicate business record (source row excluded)
+O00005,C0270,2025-10-16,Store,Completed,1806,duplicate business record (source row excluded)
+O00006,C0253,2025-10-14,Online,Cancelled,1807,duplicate business record (source row excluded)
+O00007,C0228,2025-11-09,Online,Completed,1808,duplicate business record (source row excluded)
+O00008,C0010,2025-03-17,Online,Completed,1809,duplicate business record (source row excluded)
+O00009,C0286,2025-11-04,Online,Completed,1810,duplicate business record (source row excluded)
+O00010,C0109,2025-07-03,Store,Completed,1811,duplicate business record (source row excluded)
+O00011,C0280,2025-10-20,Store,Completed,1812,duplicate business record (source row excluded)
+O00012,C0293,2025-12-02, web ,Completed,1813,duplicate business record (source row excluded)
