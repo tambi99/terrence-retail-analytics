@@ -1,0 +1,6 @@
+table,raw_rows,duplicate_rows_removed,rejected_rows,clean_rows,accounting_passed
+customers,304,4,0,300,True
+products,26,2,0,24,True
+orders,1813,12,1,1800,True
+order_lines,4476,25,5,4446,True
+returns,339,3,1,335,True

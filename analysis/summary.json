@@ -1,0 +1,333 @@
+{
+  "dataset": "Synthetic Terrence retail portfolio; no real customers or company results",
+  "analysis_period": "2025-01-01 through 2025-12-31 completed order cohorts",
+  "return_cutoff": "2026-01-30",
+  "currency": "USD",
+  "method": "Read raw CSV -> normalize -> deduplicate -> quarantine invalid/conflicting rows -> validate foreign keys -> aggregate returns by line -> join dimensions -> filter completed orders -> summarize with Decimal arithmetic",
+  "kpis": {
+    "gross_sales": 2170836.0,
+    "discounts": 194394.3,
+    "sales_before_returns": 1976441.7,
+    "refunds": 100947.1,
+    "net_sales": 1875494.6,
+    "sold_units": 12354,
+    "returned_units": 648,
+    "completed_orders": 1661,
+    "purchasing_customers": 300,
+    "aov": 1129.1358217941,
+    "unit_return_rate": 0.05245264691597863,
+    "repeat_customers": 297,
+    "repeat_customer_rate": 0.99,
+    "repeat_customer_net_sales": 1871694.85,
+    "cancelled_orders_excluded": 139,
+    "cancelled_lines_excluded": 351,
+    "repeat_sales_share": 0.9979740010981637
+  },
+  "quality": [
+    {
+      "table": "customers",
+      "raw_rows": 304,
+      "duplicate_rows_removed": 4,
+      "rejected_rows": 0,
+      "clean_rows": 300,
+      "accounting_passed": true
+    },
+    {
+      "table": "products",
+      "raw_rows": 26,
+      "duplicate_rows_removed": 2,
+      "rejected_rows": 0,
+      "clean_rows": 24,
+      "accounting_passed": true
+    },
+    {
+      "table": "orders",
+      "raw_rows": 1813,
+      "duplicate_rows_removed": 12,
+      "rejected_rows": 1,
+      "clean_rows": 1800,
+      "accounting_passed": true
+    },
+    {
+      "table": "order_lines",
+      "raw_rows": 4476,
+      "duplicate_rows_removed": 25,
+      "rejected_rows": 5,
+      "clean_rows": 4446,
+      "accounting_passed": true
+    },
+    {
+      "table": "returns",
+      "raw_rows": 339,
+      "duplicate_rows_removed": 3,
+      "rejected_rows": 1,
+      "clean_rows": 335,
+      "accounting_passed": true
+    }
+  ],
+  "validation_passed": true,
+  "findings": {
+    "peak_month": {
+      "order_month": "2025-11",
+      "gross_sales": 204649.0,
+      "discounts": 18507.65,
+      "sales_before_returns": 186141.35,
+      "refunds": 6866.4,
+      "net_sales": 179274.95,
+      "sold_units": 1149,
+      "returned_units": 44,
+      "completed_orders": 149,
+      "purchasing_customers": 119,
+      "aov": 1203.1875838926173,
+      "unit_return_rate": 0.038294168842471714,
+      "net_sales_share": 0.09558809180255705,
+      "mom_growth": 0.023987386002655427,
+      "trailing_3_month_avg": 175617.41666666666
+    },
+    "lowest_month": {
+      "order_month": "2025-05",
+      "gross_sales": 143502.0,
+      "discounts": 14864.7,
+      "sales_before_returns": 128637.3,
+      "refunds": 6425.0,
+      "net_sales": 122212.3,
+      "sold_units": 822,
+      "returned_units": 40,
+      "completed_orders": 125,
+      "purchasing_customers": 99,
+      "aov": 977.6984,
+      "unit_return_rate": 0.04866180048661801,
+      "net_sales_share": 0.06516270428078012,
+      "mom_growth": -0.23915705592130862,
+      "trailing_3_month_avg": 138780.46666666667
+    },
+    "top_category": {
+      "category": "Furniture",
+      "gross_sales": 1212352.0,
+      "discounts": 107296.6,
+      "sales_before_returns": 1105055.4,
+      "refunds": 53491.8,
+      "net_sales": 1051563.6,
+      "sold_units": 6205,
+      "returned_units": 303,
+      "completed_orders": 1290,
+      "purchasing_customers": 298,
+      "aov": 815.1655813953488,
+      "unit_return_rate": 0.04883158742949235,
+      "net_sales_share": 0.5606860185041322
+    },
+    "highest_return_rate_category": {
+      "category": "Storage",
+      "gross_sales": 359626.0,
+      "discounts": 34847.45,
+      "sales_before_returns": 324778.55,
+      "refunds": 16877.2,
+      "net_sales": 307901.35,
+      "sold_units": 2940,
+      "returned_units": 170,
+      "completed_orders": 771,
+      "purchasing_customers": 279,
+      "aov": 399.35324254215305,
+      "unit_return_rate": 0.05782312925170068,
+      "net_sales_share": 0.16417074727914438
+    },
+    "top_products": [
+      {
+        "product_id": "P014",
+        "product_name": "Chair 014",
+        "category": "Furniture",
+        "gross_sales": 180222.0,
+        "discounts": 15920.1,
+        "sales_before_returns": 164301.9,
+        "refunds": 8129.1,
+        "net_sales": 156172.8,
+        "sold_units": 613,
+        "returned_units": 29,
+        "completed_orders": 188,
+        "purchasing_customers": 139,
+        "aov": 830.7063829787234,
+        "unit_return_rate": 0.04730831973898858,
+        "net_sales_share": 0.08327019443297784,
+        "net_sales_rank": 1
+      },
+      {
+        "product_id": "P017",
+        "product_name": "Lamp 017",
+        "category": "Lighting",
+        "gross_sales": 157800.0,
+        "discounts": 12180.0,
+        "sales_before_returns": 145620.0,
+        "refunds": 8100.0,
+        "net_sales": 137520.0,
+        "sold_units": 526,
+        "returned_units": 30,
+        "completed_orders": 175,
+        "purchasing_customers": 132,
+        "aov": 785.8285714285714,
+        "unit_return_rate": 0.057034220532319393,
+        "net_sales_share": 0.07332465793289941,
+        "net_sales_rank": 2
+      },
+      {
+        "product_id": "P013",
+        "product_name": "Lamp 013",
+        "category": "Lighting",
+        "gross_sales": 157180.0,
+        "discounts": 15799.3,
+        "sales_before_returns": 141380.7,
+        "refunds": 6991.8,
+        "net_sales": 134388.9,
+        "sold_units": 580,
+        "returned_units": 29,
+        "completed_orders": 176,
+        "purchasing_customers": 137,
+        "aov": 763.5732954545455,
+        "unit_return_rate": 0.05,
+        "net_sales_share": 0.07165517831936173,
+        "net_sales_rank": 3
+      },
+      {
+        "product_id": "P002",
+        "product_name": "Chair 002",
+        "category": "Furniture",
+        "gross_sales": 139444.0,
+        "discounts": 13248.6,
+        "sales_before_returns": 126195.4,
+        "refunds": 3834.0,
+        "net_sales": 122361.4,
+        "sold_units": 491,
+        "returned_units": 15,
+        "completed_orders": 158,
+        "purchasing_customers": 123,
+        "aov": 774.4392405063292,
+        "unit_return_rate": 0.03054989816700611,
+        "net_sales_share": 0.0652422033099962,
+        "net_sales_rank": 4
+      },
+      {
+        "product_id": "P021",
+        "product_name": "Lamp 021",
+        "category": "Lighting",
+        "gross_sales": 137946.0,
+        "discounts": 11765.25,
+        "sales_before_returns": 126180.75,
+        "refunds": 8080.05,
+        "net_sales": 118100.7,
+        "sold_units": 554,
+        "returned_units": 35,
+        "completed_orders": 183,
+        "purchasing_customers": 142,
+        "aov": 645.3590163934426,
+        "unit_return_rate": 0.0631768953068592,
+        "net_sales_share": 0.06297042924037212,
+        "net_sales_rank": 5
+      }
+    ],
+    "top_channel": {
+      "channel": "Online",
+      "gross_sales": 1082292.0,
+      "discounts": 96681.95,
+      "sales_before_returns": 985610.05,
+      "refunds": 43045.9,
+      "net_sales": 942564.15,
+      "sold_units": 6207,
+      "returned_units": 289,
+      "completed_orders": 839,
+      "purchasing_customers": 283,
+      "aov": 1123.4376042908225,
+      "unit_return_rate": 0.04656033510552602,
+      "net_sales_share": 0.5025683091809489
+    },
+    "top_region": {
+      "region": "West",
+      "gross_sales": 611364.0,
+      "discounts": 54392.0,
+      "sales_before_returns": 556972.0,
+      "refunds": 30084.35,
+      "net_sales": 526887.65,
+      "sold_units": 3492,
+      "returned_units": 194,
+      "completed_orders": 484,
+      "purchasing_customers": 88,
+      "aov": 1088.610847107438,
+      "unit_return_rate": 0.05555555555555555,
+      "net_sales_share": 0.28093264038190247
+    }
+  },
+  "limitations": [
+    "Synthetic sample supports a portfolio demonstration, not a real business decision.",
+    "Returns are attributed to original order month, including accepted events through January 30, 2026.",
+    "Repeat customer means at least two completed orders in 2025; it is not retention and uses no earlier purchase history.",
+    "No costs, profit, inventory, targets, campaign data or prior-year data were supplied; do not infer margin, causality, target attainment or year-over-year growth.",
+    "Three-month average requires a full three-month calendar window; January and February are blank.",
+    "Distinct order counts by product/category overlap and must not be summed across these groups.",
+    "Known benchmark is generator-derived and only a comparison; clean outputs and measurements are independently computed from raw files."
+  ],
+  "sources": [
+    {
+      "path": "data/raw/customers.csv",
+      "sha256": "0c556fa3252cd78b099276c34fdf07d01199c14f22c7d5baf15edb22a49acbc9",
+      "bytes": 17334,
+      "raw_rows": 304,
+      "columns": [
+        "customer_id",
+        "customer_name",
+        "region",
+        "segment",
+        "email"
+      ]
+    },
+    {
+      "path": "data/raw/products.csv",
+      "sha256": "c1ac687beb9d20261ddd5a126a892e4ffb4fb5ed3b3494abd689c5dcd87c2f52",
+      "bytes": 837,
+      "raw_rows": 26,
+      "columns": [
+        "product_id",
+        "product_name",
+        "category",
+        "list_price"
+      ]
+    },
+    {
+      "path": "data/raw/orders.csv",
+      "sha256": "24596d3c107dc370f8c5618f92fee37c9c733c282e696fbc081354aacc2489e1",
+      "bytes": 73773,
+      "raw_rows": 1813,
+      "columns": [
+        "order_id",
+        "customer_id",
+        "order_date",
+        "channel",
+        "status"
+      ]
+    },
+    {
+      "path": "data/raw/order_lines.csv",
+      "sha256": "84616ea667ec536c3280f0e4760edaeafa79671b0eda12d6cb671768dd39e0b6",
+      "bytes": 150959,
+      "raw_rows": 4476,
+      "columns": [
+        "order_line_id",
+        "order_id",
+        "product_id",
+        "quantity",
+        "unit_price",
+        "discount_rate"
+      ]
+    },
+    {
+      "path": "data/raw/returns.csv",
+      "sha256": "8c999b1dc4d91c5c5b8c6bab358cf99192d3fdf50bbcc94178c041ba56fe001d",
+      "bytes": 12981,
+      "raw_rows": 339,
+      "columns": [
+        "return_id",
+        "order_line_id",
+        "return_date",
+        "return_quantity",
+        "reason"
+      ]
+    }
+  ]
+}
