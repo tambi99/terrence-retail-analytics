@@ -1,0 +1,32 @@
+{
+  "note": "Spoilers; derived from pre-corruption generator truth, not from a SQL Server execution.",
+  "clean_rows": {
+    "customers": 300,
+    "products": 24,
+    "orders": 1800,
+    "order_lines": 4446,
+    "returns": 335
+  },
+  "duplicate_rows_removed": {
+    "customers": 4,
+    "products": 2,
+    "orders": 12,
+    "order_lines": 25,
+    "returns": 3
+  },
+  "rejected_rows": {
+    "customers": 0,
+    "products": 0,
+    "orders": 1,
+    "order_lines": 5,
+    "returns": 1
+  },
+  "completed_orders": 1661,
+  "gross_sales": "2170836.00",
+  "discounts": "194394.3000",
+  "refunds": "100947.1000",
+  "net_sales": "1875494.6000",
+  "aov": "1129.135821794099939795304034",
+  "sold_units": 12354,
+  "returned_units": 648
+}

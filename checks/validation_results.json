@@ -1,0 +1,230 @@
+{
+  "passed": true,
+  "checks_count": 31,
+  "checks": [
+    {
+      "check": "unique_customers_keys",
+      "passed": true,
+      "detail": "300 clean rows"
+    },
+    {
+      "check": "unique_products_keys",
+      "passed": true,
+      "detail": "24 clean rows"
+    },
+    {
+      "check": "unique_orders_keys",
+      "passed": true,
+      "detail": "1800 clean rows"
+    },
+    {
+      "check": "unique_order_lines_keys",
+      "passed": true,
+      "detail": "4446 clean rows"
+    },
+    {
+      "check": "unique_returns_keys",
+      "passed": true,
+      "detail": "335 clean rows"
+    },
+    {
+      "check": "raw_row_accounting",
+      "passed": true,
+      "detail": "raw = clean + duplicates removed + invalid rows rejected, for every table"
+    },
+    {
+      "check": "no_fact_join_fanout",
+      "passed": true,
+      "detail": "4446 joined facts / 4446 clean lines"
+    },
+    {
+      "check": "completed_orders_have_lines",
+      "passed": true,
+      "detail": "Completed order count is independently reconciled to clean order headers"
+    },
+    {
+      "check": "all_foreign_keys_valid",
+      "passed": true,
+      "detail": "Dimensions validated before facts; rejected-parent children excluded"
+    },
+    {
+      "check": "cumulative_return_quantity_bounded",
+      "passed": true,
+      "detail": "Returns aggregated to line before joining"
+    },
+    {
+      "check": "return_quantities_reconcile",
+      "passed": true,
+      "detail": "Accepted events equal line-level returned units"
+    },
+    {
+      "check": "line_sales_identity",
+      "passed": true,
+      "detail": "Exact Decimal comparisons"
+    },
+    {
+      "check": "monthly_calendar_complete",
+      "passed": true,
+      "detail": "All 12 calendar months appear"
+    },
+    {
+      "check": "reconcile_order_summary",
+      "passed": true,
+      "detail": "All additive measures reconcile to completed-line totals; grouped distinct order counts are not additive across categories/products"
+    },
+    {
+      "check": "reconcile_monthly_summary",
+      "passed": true,
+      "detail": "All additive measures reconcile to completed-line totals; grouped distinct order counts are not additive across categories/products"
+    },
+    {
+      "check": "reconcile_category_summary",
+      "passed": true,
+      "detail": "All additive measures reconcile to completed-line totals; grouped distinct order counts are not additive across categories/products"
+    },
+    {
+      "check": "reconcile_product_summary",
+      "passed": true,
+      "detail": "All additive measures reconcile to completed-line totals; grouped distinct order counts are not additive across categories/products"
+    },
+    {
+      "check": "reconcile_channel_summary",
+      "passed": true,
+      "detail": "All additive measures reconcile to completed-line totals; grouped distinct order counts are not additive across categories/products"
+    },
+    {
+      "check": "reconcile_region_summary",
+      "passed": true,
+      "detail": "All additive measures reconcile to completed-line totals; grouped distinct order counts are not additive across categories/products"
+    },
+    {
+      "check": "reconcile_customer_summary",
+      "passed": true,
+      "detail": "All additive measures reconcile to completed-line totals; grouped distinct order counts are not additive across categories/products"
+    },
+    {
+      "check": "benchmark_clean_rows",
+      "passed": true,
+      "detail": {
+        "actual": {
+          "customers": 300,
+          "products": 24,
+          "orders": 1800,
+          "order_lines": 4446,
+          "returns": 335
+        },
+        "expected": {
+          "customers": 300,
+          "products": 24,
+          "orders": 1800,
+          "order_lines": 4446,
+          "returns": 335
+        }
+      }
+    },
+    {
+      "check": "benchmark_duplicate_rows_removed",
+      "passed": true,
+      "detail": {
+        "actual": {
+          "customers": 4,
+          "products": 2,
+          "orders": 12,
+          "order_lines": 25,
+          "returns": 3
+        },
+        "expected": {
+          "customers": 4,
+          "products": 2,
+          "orders": 12,
+          "order_lines": 25,
+          "returns": 3
+        }
+      }
+    },
+    {
+      "check": "benchmark_rejected_rows",
+      "passed": true,
+      "detail": {
+        "actual": {
+          "customers": 0,
+          "products": 0,
+          "orders": 1,
+          "order_lines": 5,
+          "returns": 1
+        },
+        "expected": {
+          "customers": 0,
+          "products": 0,
+          "orders": 1,
+          "order_lines": 5,
+          "returns": 1
+        }
+      }
+    },
+    {
+      "check": "benchmark_completed_orders",
+      "passed": true,
+      "detail": {
+        "actual": "1661",
+        "expected": "1661"
+      }
+    },
+    {
+      "check": "benchmark_gross_sales",
+      "passed": true,
+      "detail": {
+        "actual": "2170836.00",
+        "expected": "2170836.00"
+      }
+    },
+    {
+      "check": "benchmark_discounts",
+      "passed": true,
+      "detail": {
+        "actual": "194394.3000",
+        "expected": "194394.3000"
+      }
+    },
+    {
+      "check": "benchmark_refunds",
+      "passed": true,
+      "detail": {
+        "actual": "100947.1000",
+        "expected": "100947.1000"
+      }
+    },
+    {
+      "check": "benchmark_net_sales",
+      "passed": true,
+      "detail": {
+        "actual": "1875494.6000",
+        "expected": "1875494.6000"
+      }
+    },
+    {
+      "check": "benchmark_sold_units",
+      "passed": true,
+      "detail": {
+        "actual": "12354",
+        "expected": "12354"
+      }
+    },
+    {
+      "check": "benchmark_returned_units",
+      "passed": true,
+      "detail": {
+        "actual": "648",
+        "expected": "648"
+      }
+    },
+    {
+      "check": "benchmark_aov",
+      "passed": true,
+      "detail": {
+        "actual": "1129.135821794099939795304034",
+        "expected": "1129.135821794099939795304034"
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "dataset_type": "synthetic",
+  "hash_algorithm": "SHA-256",
+  "sources": [
+    {
+      "path": "data/raw/customers.csv",
+      "sha256": "0c556fa3252cd78b099276c34fdf07d01199c14f22c7d5baf15edb22a49acbc9",
+      "bytes": 17334,
+      "raw_rows": 304,
+      "columns": [
+        "customer_id",
+        "customer_name",
+        "region",
+        "segment",
+        "email"
+      ]
+    },
+    {
+      "path": "data/raw/products.csv",
+      "sha256": "c1ac687beb9d20261ddd5a126a892e4ffb4fb5ed3b3494abd689c5dcd87c2f52",
+      "bytes": 837,
+      "raw_rows": 26,
+      "columns": [
+        "product_id",
+        "product_name",
+        "category",
+        "list_price"
+      ]
+    },
+    {
+      "path": "data/raw/orders.csv",
+      "sha256": "24596d3c107dc370f8c5618f92fee37c9c733c282e696fbc081354aacc2489e1",
+      "bytes": 73773,
+      "raw_rows": 1813,
+      "columns": [
+        "order_id",
+        "customer_id",
+        "order_date",
+        "channel",
+        "status"
+      ]
+    },
+    {
+      "path": "data/raw/order_lines.csv",
+      "sha256": "84616ea667ec536c3280f0e4760edaeafa79671b0eda12d6cb671768dd39e0b6",
+      "bytes": 150959,
+      "raw_rows": 4476,
+      "columns": [
+        "order_line_id",
+        "order_id",
+        "product_id",
+        "quantity",
+        "unit_price",
+        "discount_rate"
+      ]
+    },
+    {
+      "path": "data/raw/returns.csv",
+      "sha256": "8c999b1dc4d91c5c5b8c6bab358cf99192d3fdf50bbcc94178c041ba56fe001d",
+      "bytes": 12981,
+      "raw_rows": 339,
+      "columns": [
+        "return_id",
+        "order_line_id",
+        "return_date",
+        "return_quantity",
+        "reason"
+      ]
+    }
+  ]
+}

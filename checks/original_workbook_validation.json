@@ -1,0 +1,50 @@
+{
+  "original_filename": "Terrence_Retail_Project.xlsx",
+  "published_filename": "Terrence_Power_Query_Practice.xlsx",
+  "sha256": "5ec868a7d3fb2076001f2d774b2262a028b56d47662d8d953c440d2bc517cd64",
+  "byte_for_byte_preserved": true,
+  "native_parts": {
+    "power_query_mashup_present": true,
+    "data_model_present": true,
+    "connections_present": true,
+    "pivot_parts_present": false
+  },
+  "clean_table_comparison": [
+    {
+      "table": "customers",
+      "saved_workbook_rows": 300,
+      "independent_clean_rows": 300,
+      "business_values_match": true,
+      "match_after_channel_mapping_and_reason_case_normalization": true
+    },
+    {
+      "table": "products",
+      "saved_workbook_rows": 24,
+      "independent_clean_rows": 24,
+      "business_values_match": true,
+      "match_after_channel_mapping_and_reason_case_normalization": true
+    },
+    {
+      "table": "orders",
+      "saved_workbook_rows": 1800,
+      "independent_clean_rows": 1800,
+      "business_values_match": false,
+      "match_after_channel_mapping_and_reason_case_normalization": true
+    },
+    {
+      "table": "order_lines",
+      "saved_workbook_rows": 4446,
+      "independent_clean_rows": 4446,
+      "business_values_match": true,
+      "match_after_channel_mapping_and_reason_case_normalization": true
+    },
+    {
+      "table": "returns",
+      "saved_workbook_rows": 335,
+      "independent_clean_rows": 335,
+      "business_values_match": false,
+      "match_after_channel_mapping_and_reason_case_normalization": true
+    }
+  ],
+  "desktop_refresh_verified": false
+}

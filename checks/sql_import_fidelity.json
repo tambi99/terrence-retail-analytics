@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "files": [
+    {
+      "file": "customers.csv",
+      "records": 304,
+      "raw_values_and_source_row_match": true
+    },
+    {
+      "file": "order_lines.csv",
+      "records": 4476,
+      "raw_values_and_source_row_match": true
+    },
+    {
+      "file": "orders.csv",
+      "records": 1813,
+      "raw_values_and_source_row_match": true
+    },
+    {
+      "file": "products.csv",
+      "records": 26,
+      "raw_values_and_source_row_match": true
+    },
+    {
+      "file": "returns.csv",
+      "records": 339,
+      "raw_values_and_source_row_match": true
+    }
+  ]
+}

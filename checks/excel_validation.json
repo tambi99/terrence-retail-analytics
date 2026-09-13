@@ -1,0 +1,22 @@
+{
+  "engine": "Artifact Tool; desktop Excel execution not verified",
+  "passed": true,
+  "checkpoints": {
+    "net": 1875494.6000000006,
+    "orders": 1661,
+    "gross": 2170836,
+    "discounts": 194394.29999999996,
+    "refunds": 100947.09999999999,
+    "sold": 12354,
+    "returned": 648,
+    "westOrders": 484
+  },
+  "recalculation_test": {
+    "input": "SalesLines!J5",
+    "change": 10,
+    "expected_net": 1875502.6000000006,
+    "observed_net": 1875502.6000000006,
+    "restored": true
+  },
+  "formula_error_scan": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+}
