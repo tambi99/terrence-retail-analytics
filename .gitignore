@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+~$*.xlsx
+.DS_Store
+Thumbs.db
+data/sql_import/
+*.tmp
+*.inspect.ndjson
+.env
+.env.*

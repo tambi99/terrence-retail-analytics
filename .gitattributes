@@ -1,0 +1,8 @@
+* text=auto
+*.csv text eol=lf
+*.sql text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.xlsx binary
+*.png binary
+data/raw/*.csv -text
