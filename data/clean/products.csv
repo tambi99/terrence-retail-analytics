@@ -1,0 +1,25 @@
+product_id,product_name,category,list_price,source_row
+P001,Lamp 001,Lighting,122.00,2
+P002,Chair 002,Furniture,284.00,3
+P003,Shelf 003,Storage,199.00,4
+P004,Desk 004,Furniture,123.00,5
+P005,Lamp 005,Lighting,65.00,6
+P006,Chair 006,Furniture,196.00,7
+P007,Shelf 007,Storage,35.00,8
+P008,Desk 008,Furniture,188.00,9
+P009,Lamp 009,Lighting,93.00,10
+P010,Chair 010,Furniture,211.00,11
+P011,Shelf 011,Storage,80.00,12
+P012,Desk 012,Furniture,134.00,13
+P013,Lamp 013,Lighting,271.00,14
+P014,Chair 014,Furniture,294.00,15
+P015,Shelf 015,Storage,254.00,16
+P016,Desk 016,Furniture,231.00,17
+P017,Lamp 017,Lighting,300.00,18
+P018,Chair 018,Furniture,269.00,19
+P019,Shelf 019,Storage,78.00,20
+P020,Desk 020,Furniture,189.00,21
+P021,Lamp 021,Lighting,249.00,22
+P022,Chair 022,Furniture,134.00,23
+P023,Shelf 023,Storage,68.00,24
+P024,Desk 024,Furniture,81.00,25
