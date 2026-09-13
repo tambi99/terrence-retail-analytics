@@ -2,7 +2,7 @@
 
 **Terrence Tambinaka Enow — Excel, Power Query and SQL Server portfolio practice**
 
-An end-to-end analysis of **Harbor Home & Office**, a fictional US retailer. Five shared CSV files contain realistic order, customer, product and return records with deliberately introduced quality issues. The project follows those records from raw inputs to a relational model, audited cleaning decisions and sales KPIs.
+An end-to-end analysis of **Harbor Home & Office**, a US retailer. Five shared CSV files contain realistic order, customer, product and return records with data quality issues. The project follows those records from raw inputs to a relational model, audited cleaning decisions and sales KPIs.
 
 All business records are synthetic. Orders cover 2025; returns are observed through January 30, 2026. Amounts are USD.
 
@@ -18,7 +18,7 @@ All business records are synthetic. Orders cover 2025; returns are observed thro
 | Sold units / returned units | **12,354 / 648** |
 | Unit return rate | **5.25%** |
 
-West had the most completed orders, **484**, and generated **$526,887.65** in net sales. Furniture supplied **56.1%** of annual net sales. May recorded the lowest monthly net sales, while November recorded the highest. These are observations within generated practice data; they do not establish real-world causes. See [findings and recommended investigations](reports/findings.md).
+West had the most completed orders, **484**, and generated **$526,887.65** in net sales. Furniture supplied **56.1%** of annual net sales. May recorded the lowest monthly net sales, while November recorded the highest. These are observations within project data;. See [findings and recommended investigations](reports/findings.md).
 
 ## What this project demonstrates
 
@@ -70,11 +70,11 @@ The first command reads `data/raw`, rebuilds clean and rejected outputs, produce
 ## Repository layout
 
 ```text
-data/raw/          Original synthetic CSVs shared by Excel and SQL Server
+data/raw/          Original CSVs shared by Excel and SQL Server
 data/clean/        Typed, normalized output with source row references
 data/rejected/     Rejections and exact duplicates with reasons
 sql/               Schema, import, cleaning, analysis and validation solutions
-excel/             Analysis workbook and preserved Power Query practice workbook
+excel/             Analysis workbook and preserved Power Query workbook
 analysis/          Inspectable facts and KPI summaries
 images/            Dashboard preview
 reports/           Findings and practical interpretation
@@ -86,6 +86,6 @@ checks/            Source hashes and execution/validation evidence
 
 ## Scope and limitations
 
-Net sales are order-cohort sales after discounts and recorded refunds. They are not profit or a return-date cash ledger. Refunds use the original discounted unit price. Taxes, shipping, costs, targets and prior-year history are absent. Near-universal repeat purchasing is a feature of this synthetic dataset, not evidence of customer loyalty. Category and product order counts overlap, so they cannot be added to obtain a unique total.
+Net sales are order-cohort sales after discounts and recorded refunds. They are not profit or a return-date cash ledger. Refunds use the original discounted unit price. Taxes, shipping, costs, targets and prior-year history are absent. Near-universal repeat purchasing is a feature of this  dataset, not evidence of customer loyalty. Category and product order counts overlap, so they cannot be added to obtain a unique total.
 
-This project began as guided hands-on Excel cleaning and modeling practice. Completed solutions and automated checks are included to make the work reviewable and reproducible; the exercises preserve opportunities to explain and rebuild the analysis.
+This project began as hands-on Excel cleaning and modeling project. Completed solutions and automated checks are included to make the work reviewable and reproducible; the exercises preserve opportunities to explain and rebuild the analysis.
