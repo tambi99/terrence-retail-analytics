@@ -53,7 +53,8 @@ The Power BI work extends the Excel and SQL analysis rather than replacing it: E
 1. Open [the Excel analysis workbook](excel/Terrence_Retail_Analysis.xlsx). Its formulas calculate financial measures from prepared line inputs and roll them into orders, months and the dashboard. [Excel guide](docs/excel_guide.md).
 2. Review [metric definitions and the data model](docs/methodology.md).
 3. Follow [SQL Server setup](docs/sql_setup.md), then run the five numbered files in `sql/` in order.
-4. Use [practice exercises](practice/exercises.md) to repeat the work without reading the completed solutions first.
+4. Open [the Power BI report](powerbi/Retail_Sales_Returns_Analytics.pbix) in Power BI Desktop and review [the dashboard documentation](docs/power_bi_dashboard.md).
+5. Use [practice exercises](practice/exercises.md) to repeat the work without reading the completed solutions first.
 
 The [original Power Query practice workbook](excel/Terrence_Power_Query_Practice.xlsx) is also included as an unchanged copy. Its five clean table counts match, and its business values match the independent output after mapping Web/Retail channels and normalizing return-reason capitalization. The original contains Power Query and a Data Model; its saved file does not contain the later PivotTable or Calendar query. [Preservation and comparison evidence](checks/original_workbook_validation.json).
 
@@ -94,6 +95,7 @@ data/clean/        Typed, normalized output with source row references
 data/rejected/     Rejections and exact duplicates with reasons
 sql/               Schema, import, cleaning, analysis and validation solutions
 excel/             Analysis workbook and preserved Power Query workbook
+powerbi/           Power BI report and report-specific notes
 analysis/          Inspectable facts and KPI summaries
 images/            Dashboard preview
 reports/           Findings and practical interpretation
