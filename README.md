@@ -20,6 +20,25 @@ All business records are organic. Orders cover 2025; returns are observed throug
 
 West had the most completed orders, **484**, and generated **$526,887.65** in net sales. Furniture supplied **56.1%** of annual net sales. May recorded the lowest monthly net sales, while November recorded the highest. These are observations within project data;. See [findings and recommended investigations](reports/findings.md).
 
+## Power BI dashboard
+
+The project now includes a Power BI reporting layer built on the cleaned retail model. The report adds an **Executive Overview** and a **Returns Analysis** page so the same business problem can be explored interactively.
+
+Key report features include:
+
+- Net sales after refunds with monthly trend analysis.
+- Refund amount and return-rate KPIs.
+- Net sales by product category.
+- Refund amount by return reason.
+- Top 10 products by refund amount.
+- Return-rate analysis by category.
+- Return-reason share analysis and drill-down views.
+- Calendar-based Year-Month sorting and month-over-month time intelligence.
+
+The Power BI work extends the Excel and SQL analysis rather than replacing it: Excel demonstrates formula-based reporting, SQL demonstrates relational querying and validation, and Power BI demonstrates semantic modeling, DAX measures and interactive business reporting.
+
+[Power BI dashboard documentation](docs/power_bi_dashboard.md)
+
 ## What this project demonstrates
 
 - Power Query profiling, explicit date and number conversion, text standardization, duplicate review and rejection queries.
